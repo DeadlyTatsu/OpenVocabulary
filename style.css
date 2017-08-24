@@ -1,0 +1,568 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin:0;	
+	padding:0;	
+}
+
+#storbox {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#imgBackground {
+	-webkit-box-sizing: border-box;
+   	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+	
+	position:absolute;
+	top:0;
+	left:0;
+	
+	background-image:url(Pictures/books.jpg);
+	height:100%;
+	width:100%;
+	background-color:blue;
+	
+	overflow: hidden;
+	z-index:-2;
+
+}
+
+img {
+	width: 169px;
+}
+
+header {
+	overflow: hidden;
+	opacity: 0.9;
+	z-index:10;
+	background-color: #2D8775;	
+	-webkit-box-sizing: border-box;
+   	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+	
+	width:40%;
+	height:100%;
+	padding: 5%;
+}
+	
+nav {
+	opacity: 1;
+	padding-top: 50px;
+	overflow:auto;
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+.quote-box {
+	filter: none;
+}
+
+#login, #sign-up {
+	width:300px;
+	height:25px;
+	padding:20px;
+	position:absolute;
+	border-style:solid;
+	border-width:2px;
+	border-radius:5px;
+}
+
+#login {
+	background-color:#D3A947; 
+	float:left;
+	margin:25px 0 25px 15%;
+	border-color:#F5CE73;
+	right: 52%;			
+}
+
+#login:hover {
+	background-color:#F5CE73; 
+	border-color:#D3A947;
+}
+
+#sign-up {
+	background-color:#B93E69;
+	float:right;	
+	margin:25px 15% 25px 0;
+	border-color:#D7658D;
+	left: 52%;		
+}
+
+#sign-up:hover {
+	background-color:#D7658D;
+	border-color:#B93E69;
+}
+
+.link {
+	width: 95%;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+
+}
+
+.link:hover {
+	text-decoration:underline;
+	color: aqua;
+}
+
+article {
+	width:100%;
+	position:relative;
+	height: auto;
+	background-color:#FFF;	
+	overflow:auto;
+}
+
+section	{
+	margin-top:5%;
+	overflow:hidden;
+	padding-left:14.28%;
+	padding-right:14.28%;
+}
+
+.text-left {
+	width:60%;
+	float:left;
+}
+
+.text-right {
+	height:100%;
+	width:60%;
+	float:right;
+}
+
+.img-left {
+	width:33.3%;
+	float:left;
+}
+
+.img-right {
+	width:33.3%;
+	float:right;
+}
+
+
+
+a {
+	text-decoration:none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h3, h5, h6 {
+	text-align: center;
+	color:#FFF;
+	margin:0;
+}
+
+h2, p {
+	color: #2D8775;	
+	margin:0;
+}
+
+h1 {
+	font-family: 'Oleo Script Swash Caps', cursive;
+	font-size:54px;	
+}
+
+h2{
+	font-size:48px;
+	font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+h3 {
+	font-size:36px;	
+}
+
+h5 {
+	font-size:24px;
+}
+
+h6 {
+	position:absolute;
+	bottom: 0;
+	margin:0 auto 10px auto;
+	width: 100%;
+	height: 20px;
+}
+
+.altText {
+	color:#FFF;
+  	margin-bottom:15px;
+}
+
+p {
+	font-size:24px;
+	margin-left: 40px;	
+	margin-top: 20px;
+	line-height:38px;
+}
+
+.imgR {
+	float: right;	
+}
+
+@keyframes sun {
+    0%   {
+		-ms-transform: rotate(0deg); /* IE 9 */
+    	-webkit-transform: rotate(0deg); /* Safari */
+    	transform: rotate(0deg);
+	}
+    100% {
+	    -ms-transform: rotate(360deg); /* IE 9 */
+    	-webkit-transform: rotate(360deg); /* Safari */
+    	transform: rotate(360deg);	
+	}
+}
+
+@keyframes shake {
+    0%, 4%, 12%, 20%, 100%   {
+		-ms-transform: rotate(0deg); /* IE 9 */
+    	-webkit-transform: rotate(0deg); /* Safari */
+    	transform: rotate(0deg);
+	}
+	8% {
+		-ms-transform: rotate(10deg); /* IE 9 */
+    	-webkit-transform: rotate(10deg); /* Safari */
+    	transform: rotate(10deg);	
+	}
+	16% {
+		-ms-transform: rotate(-10deg); /* IE 9 */
+    	-webkit-transform: rotate(-10deg); /* Safari */
+    	transform: rotate(-10deg);
+	}
+}
+
+@keyframes heart {
+	0%, 12%, 100%   {
+		-ms-transform: scale(1, 1); /* IE 9 */
+		-webkit-transform: scale(1, 1); /* Safari */
+		transform: scale(1, 1);
+	}
+	8% {
+		-ms-transform: scale(1.1, 1.1); /* IE 9 */
+		-webkit-transform: scale(1.1, 1.1); /* Safari */
+		transform: scale(1.1, 1.1);		
+	}
+	16% {
+		-ms-transform: scale(1.2,1.2); /* IE 9 */
+		-webkit-transform: scale(1.2, 1.2); /* Safari */
+		transform: scale(1.2, 1.2);	
+	}
+}
+
+#imgSun {
+	animation-name: sun;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+}
+
+#imgHeart {
+	animation-name: heart;
+	animation-iteration-count: infinite;
+	animation-duration: 2.5s;
+	animation-timing-function: linear;
+}
+
+#imgLetter {
+	animation-name: shake;
+	animation-iteration-count: infinite;
+	animation-duration: 2.5s;
+	animation-timing-function: linear;
+}
+
+footer {
+	height: 200px;
+	background-color:#999;
+	margin-top:150px;	
+}
+
+.yellow {
+	background-color:#D3A947;
+
+}
+.yellow:hover {
+	background-color:#D3A947;
+
+}
+
+.pink {
+	background-color:#B93E69;
+}
+.pink:hover {
+	background-color:#B93E69;
+}
+
+.quote-box {
+	background-color: white;
+	font-size: 36px;
+	overflow: hidden;
+	padding: 20px;
+	box-shadow:1px 1px 25px 10px #216355;
+	font-family: 'Raleway', sans-serif;
+	margin: 20px 10px;
+	text-align: center;
+	border-radius: 2px;
+}
+
+.quote {
+	margin-bottom: 10px;
+	font-size: 18px;
+	color: #2D8775;
+}
+
+.author {
+	float: right;
+	font-size: 12px;
+	color: darkgrey;
+}
+
+.btn {
+	width: auto;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 25px;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	opacity: 1;
+}
+
+.btns {
+	width: 100%;
+	text-align: center;
+}
+
+.btnSignIn, .btnSignUp {
+	width: 30%;
+	margin: auto 1%;
+}
+
+.quote-box { 
+	display: none;
+}
+
+@media screen and (max-width: 900px) {
+
+	header {
+		height: auto;
+		width: 60%;
+	}
+
+	#login {
+		float:none;
+		margin:30px auto 0 auto;	
+		width:300px;
+		padding:15px;
+		position:relative;
+		right: 0;	
+	}
+
+	#sign-up {
+		float:none;
+		margin:30px auto 0 auto;	
+		width:300px;
+		padding:15px;
+		position:relative;
+		left: 0;	
+	}
+
+	h1 {
+		font-size:48px;	
+	}
+
+	h2 {
+		font-size:36px;	
+	}
+
+	h3 {
+		font-size:28px;	
+	}
+
+	h5 {
+		font-size:14px;
+	}
+
+	p {
+		font-size:18px;
+	}
+
+	img {
+		width:150px;
+	}
+
+	.text-left {
+			height:100%;
+		width:80%;
+		float:left;
+	}
+
+	.text-right {
+		height:100%;
+		width:80%;
+		float:right;
+	}
+
+	.img-left {
+		width:15%;
+		float:left;
+	}
+
+	.img-right {
+		width:15%;
+		float:right;
+	}
+
+	section	{
+		margin-top:5%;
+		overflow:hidden;
+		padding-left:10%;
+		padding-right:10%;
+	}
+
+}
+
+@media screen and (max-width: 650px) {
+	
+	h3 {
+		display: none;
+		margin:0;	
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+	
+	h1 {
+    	font-size: 36px;
+	}
+	
+	header {
+		height: 100%;
+		width: 100%;
+		padding: 5%;
+		border-style: none;
+	}
+	
+	article {
+		width:auto;
+		position:relative;
+		height: auto;
+		background-color:#FFF;	
+		overflow:auto;
+		padding: 20px;
+		margin-top: 40px;
+	}
+	
+	nav {
+		margin: 0;
+		margin-bottom: 20px;
+		padding: 0;
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+	
+	section {
+		width: 100%;
+		float: none;
+		margin: 0;
+		padding: 0;
+		margin-bottom: 50px;
+	}
+	
+	footer {
+		margin: 0;
+	}
+	
+	h2 {
+		font-size: 24px;
+	}
+	
+	p {
+		margin-left: 20px;
+	}
+	
+	.text-left, .text-right {
+		float: none;
+		width: 100%;
+	}
+	
+	.btn {
+		width: auto;
+		border-style: solid;
+		border-radius: 25px;
+		color: white;
+		padding: 10px 20px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+	}
+	
+	.btns {
+		width: 100%;
+		text-align: center;
+	}
+	
+	.btnSignIn, .btnSignUp {
+		width: 30%;
+		margin: auto 1%;
+	}
+	
+	.icon {
+		display: none;
+	}
+	
+	.quote-box {
+		display: none;
+		background-color: white;
+		font-size: 36px;
+		overflow: hidden;
+		padding: 20px;
+		box-shadow:1px 1px 25px 10px #216355;
+		font-family: 'Raleway', sans-serif;
+		margin: 20px 10px;
+		text-align: center;
+		border-radius: 2px;
+	}
+	
+	.quote {
+		margin-bottom: 10px;
+		font-size: 18px;
+		color: #2D8775;
+	}
+	
+	.author {
+		float: right;
+		font-size: 12px;
+		color: darkgrey;
+	}
+	
+	h6 {
+		color: black;
+	}
+	
+	footer {
+		width: 100%;
+	}
+}
+
+/* Phones in landscape mode*/
+@media screen and (max-height: 440px) {
+
+}
